@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "better-block-esp",
+  "version": "1.0.0",
+  "name": "Better Block Esp Addon",
+  "description": "Per block colors for AUTISM Client's BlockESP module. No extra module, just new settings.",
+  "authors": [
+    "theflex5710"
+  ],
+  "contact": {
+    "author": "theflex5710"
+  },
+  "custom": {
+    "autism:color": "255,170,0",
+    "modmenu": {
+      "parent": {
+        "id": "autism"
+      }
+    }
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.betterblockesp.BetterBlockEspInit"
+    ],
+    "autism": [
+      "com.betterblockesp.BetterBlockEspAddon"
+    ]
+  },
+  "mixins": [
+    "better-block-esp.mixins.json"
+  ],
+  "depends": {
+    "java": ">=25",
+    "minecraft": "~26.2",
+    "fabricloader": ">=0.19.3",
+    "fabric-api": ">=0.152.2+26.2",
+    "autism": ">=5.0-26.2"
+  }
+}
